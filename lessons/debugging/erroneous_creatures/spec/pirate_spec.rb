@@ -37,12 +37,12 @@ RSpec.describe Pirate do
 
     expect(pirate.cursed?).to eq(false)
   end
-
+  
   it "becomes cursed after enough heinous acts" do
     pirate = Pirate.new("Jack")
-
+   
     expect(pirate.cursed?).to eq(false)
-
+    
     pirate.commit_heinous_act
 
     expect(pirate.cursed?).to eq(false)
